@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 600">
+  <!-- 渐变背景 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <!-- 点光源效果 -->
+    <radialGradient id="spotlight" cx="50%" cy="30%" r="50%" fx="50%" fy="30%">
+      <stop offset="0%" stop-color="rgba(0,204,170,0.3)"/>
+      <stop offset="100%" stop-color="rgba(0,204,170,0)"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- 点光源 -->
+  <circle cx="500" cy="180" r="300" fill="url(#spotlight)"/>
+  
+  <!-- 抽象波浪图案 -->
+  <path d="M0,400 C100,350 150,450 250,400 C350,350 400,450 500,400 C600,350 650,450 750,400 C850,350 900,450 1000,400 L1000,600 L0,600 Z" fill="rgba(0,102,204,0.2)"/>
+  
+  <!-- 抽象分子结构 -->
+  <g opacity="0.5">
+    <!-- 第一组 -->
+    <circle cx="200" cy="200" r="3" fill="#00ccaa"/>
+    <line x1="200" y1="200" x2="250" y2="220" stroke="#00ccaa" stroke-width="1"/>
+    <circle cx="250" cy="220" r="3" fill="#00ccaa"/>
+    <line x1="250" y1="220" x2="280" y2="180" stroke="#00ccaa" stroke-width="1"/>
+    <circle cx="280" cy="180" r="3" fill="#00ccaa"/>
+    
+    <!-- 第二组 -->
+    <circle cx="700" cy="300" r="3" fill="#00ccaa"/>
+    <line x1="700" y1="300" x2="750" y2="330" stroke="#00ccaa" stroke-width="1"/>
+    <circle cx="750" cy="330" r="3" fill="#00ccaa"/>
+    <line x1="750" y1="330" x2="780" y2="290" stroke="#00ccaa" stroke-width="1"/>
+    <circle cx="780" cy="290" r="3" fill="#00ccaa"/>
+    <line x1="750" y1="330" x2="720" y2="370" stroke="#00ccaa" stroke-width="1"/>
+    <circle cx="720" cy="370" r="3" fill="#00ccaa"/>
+  </g>
+  
+  <!-- 网格线效果 -->
+  <g opacity="0.05">
+    <!-- 水平线 -->
+    <line x1="0" y1="100" x2="1000" y2="100" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1000" y2="200" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1000" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1000" y2="400" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1000" y2="500" stroke="white" stroke-width="1"/>
+    
+    <!-- 垂直线 -->
+    <line x1="200" y1="0" x2="200" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="600" stroke="white" stroke-width="1"/>
+  </g>
+</svg>

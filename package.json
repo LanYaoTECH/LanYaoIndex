@@ -1,0 +1,16 @@
+{
+  "name": "lanyao-website",
+  "version": "1.0.0",
+  "description": "澜鳐生物科技官网",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "build": "echo 'Building website...'"
+  },
+  "keywords": ["biotech", "website", "lanyao"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
