@@ -152,9 +152,13 @@ img {
 
 .header-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 20px 0;
+}
+
+.logo {
+    margin-right: auto;
 }
 
 .logo a {
@@ -173,9 +177,17 @@ img {
     font-weight: 700;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .nav-list {
     display: flex;
     list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
@@ -240,8 +252,8 @@ img {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    text-align: left;
     background-color: var(--dark-color);
     color: var(--text-light);
     overflow: hidden;
@@ -253,7 +265,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://youke1.picui.cn/s1/2025/11/23/69229cd20a658.png');
+    background-image: url('https://ray-1305015814.cos.ap-nanjing.myqcloud.com/hero-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -265,7 +277,7 @@ img {
     position: relative;
     z-index: 2;
     max-width: 800px;
-    padding: 0 20px;
+    width: 100%;
 }
 
 .hero h1 {
