@@ -10,6 +10,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* 备案链接样式：使用与周围文本相同颜色，不显示下划线，保持各状态颜色一致 */
+        .footer-bottom .plain-link {
+            color: inherit;
+            text-decoration: none;
+        }
+        .footer-bottom .plain-link:link,
+        .footer-bottom .plain-link:visited,
+        .footer-bottom .plain-link:hover,
+        .footer-bottom .plain-link:active,
+        .footer-bottom .plain-link:focus {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <!-- 头部导航 -->
@@ -245,15 +260,11 @@
                     <ul class="contact-list">
                         <li class="contact-item">
                             <span class="contact-label">地址：</span>
-                            <span class="contact-value">上海市浦东新区张江高科技园区科苑路88号</span>
-                        </li>
-                        <li class="contact-item">
-                            <span class="contact-label">电话：</span>
-                            <span class="contact-value">021-58887777</span>
+                            <span class="contact-value">江苏省南京市江宁区淳化街道龙眠大道639号</span>
                         </li>
                         <li class="contact-item">
                             <span class="contact-label">邮箱：</span>
-                            <span class="contact-value">info@lanyaobio.com</span>
+                            <span class="contact-value">zwx@abyssoray.com</span>
                         </li>
                     </ul>
                     <div class="contact-social">
@@ -323,14 +334,18 @@
                 <div class="footer-contact">
                     <h4>联系我们</h4>
                     <address>
-                        <p>上海市浦东新区张江高科技园区科苑路88号</p>
-                        <p>电话：021-58887777</p>
-                        <p>邮箱：info@lanyaobio.com</p>
+                        <p>江苏省南京市江宁区淳化街道龙眠大道639号</p>
+                        <p>邮箱：zwx@abyssoray.com</p>
                     </address>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 澜鳐生物科技有限公司. 保留所有权利.｜<a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025220229号</a></p>
+                <p style="display:inline-flex;align-items:center;flex-wrap:nowrap;white-space:nowrap;">
+                    &copy; 2025 澜鳐生物科技（南京）有限公司. 保留所有权利.｜
+                    <a class="plain-link" href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025220229号</a>｜
+                    <img src="src/images/beian.png" alt="备案图标" style="height:20px;display:inline-block;margin-right:4px;">
+                    <a class="plain-link" href="https://beian.mps.gov.cn/#/query/webSearch?code=32011502013487" rel="noreferrer" target="_blank">苏公网安备32011502013487号</a>
+                </p>
             </div>
         </div>
     </footer>
