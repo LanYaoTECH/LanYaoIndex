@@ -1,3 +1,8 @@
+// 页面脚本入口（当前保留空实现供后续维护）
+document.addEventListener('DOMContentLoaded', function () {
+	// TODO: 将现有交互逻辑（如移动菜单、返回顶部、标签页切换等）迁移到此处或导入模块以统一管理。
+});
+
 // 等待DOM加载完成
  document.addEventListener('DOMContentLoaded', function() {
     // 移动端菜单功能

@@ -7,24 +7,10 @@
     <meta name="description" content="澜鳐生物是中国类器官芯片领域的新进者，致力于通过创新技术推动健康事业发展。">
     <link rel="icon" href="src/images/icon.png" type="image/png">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/footer.css"><!-- 新增：页脚专用样式 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* 备案链接样式：使用与周围文本相同颜色，不显示下划线，保持各状态颜色一致 */
-        .footer-bottom .plain-link {
-            color: inherit;
-            text-decoration: none;
-        }
-        .footer-bottom .plain-link:link,
-        .footer-bottom .plain-link:visited,
-        .footer-bottom .plain-link:hover,
-        .footer-bottom .plain-link:active,
-        .footer-bottom .plain-link:focus {
-            color: inherit;
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
     <!-- 头部导航 -->
@@ -340,10 +326,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p style="display:inline-flex;align-items:center;flex-wrap:nowrap;white-space:nowrap;">
+                <p class="footer-bottom__inner">
                     &copy; 2025 澜鳐生物科技（南京）有限公司. 保留所有权利.｜
                     <a class="plain-link" href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025220229号</a>｜
-                    <img src="src/images/beian.png" alt="备案图标" style="height:20px;display:inline-block;margin-right:4px;">
+                    <img class="beian-icon" src="src/images/beian.png" alt="备案图标">
                     <a class="plain-link" href="https://beian.mps.gov.cn/#/query/webSearch?code=32011502013487" rel="noreferrer" target="_blank">苏公网安备32011502013487号</a>
                 </p>
             </div>
