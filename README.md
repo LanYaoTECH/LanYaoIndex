@@ -18,3 +18,4 @@
 - 添加新页面：创建新的HTML文件并在导航中添加链接
 - 更新资源：替换images目录下的相应文件
 - beichen test
+- cookie：看到了
