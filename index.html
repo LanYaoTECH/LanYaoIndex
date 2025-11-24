@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!-- 子菜单样式已迁移到 `src/css/style.css`，以便集中维护 -->
 </head>
 <body>
     <!-- 头部导航 -->
@@ -25,7 +26,14 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="#about">首页</a></li>
-                        <li class="nav-item"><a href="#technology">产品目录</a></li>
+                        <!-- 将“产品目录”项改为包含子菜单的项 -->
+                        <li class="nav-item has-submenu">
+                            <a href="#technology">产品目录</a>
+                            <ul class="submenu" aria-label="产品目录子菜单">
+                                <li><a href="#111">111</a></li>
+                                <li><a href="#222">222</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a href="#products">行业咨询</a></li>
                         <li class="nav-item"><a href="#news">鳐芯终端</a></li>
                         <li class="nav-item"><a href="#contact">联系我们</a></li>
@@ -345,5 +353,6 @@
 
     <!-- JavaScript -->
     <script src="src/js/main.js"></script>
+        <!-- 子菜单交互脚本已合并到 `src/js/main.js` -->
 </body>
 </html>

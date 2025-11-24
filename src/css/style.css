@@ -216,6 +216,58 @@ img {
     width: 100%;
 }
 
+/* 子菜单（产品目录等）的扩展样式，原先位于页面内联样式，已搬移至此以便统一维护 */
+.header .nav { position: relative; }
+.header .nav-list { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; align-items: center; }
+.header .nav-item { position: relative; }
+.header .nav-item > a { text-decoration: none; display: inline-block; padding: 8px 6px; color: inherit; }
+
+.header .submenu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    background: #fff;
+    min-width: 140px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-radius: 6px;
+    padding: 6px 0;
+    z-index: 1200;
+}
+
+.header .nav-item.has-submenu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 6px;
+    width: 160px;
+    pointer-events: auto;
+    background: transparent;
+    z-index: 1190;
+}
+
+.header .submenu li { list-style: none; }
+.header .submenu a {
+    display: block;
+    padding: 8px 14px;
+    color: #222;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 14px;
+}
+.header .submenu a:hover { background: rgba(0,0,0,0.04); }
+
+.header .nav-item.has-submenu:hover .submenu,
+.header .nav-item.has-submenu:focus-within .submenu {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .header .submenu { position: static; box-shadow: none; padding-left: 12px; }
+    .header .nav-item.has-submenu::after { display: none; }
+}
+
 .language-switch {
     display: flex;
     margin-left: 30px;
