@@ -346,13 +346,6 @@ img {
     font-weight: 500;
 }
 
-.hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: var(--accent-color);
-    font-weight: 500;
-}
-
 .hero-tagline {
     font-size: 1.2rem;
     margin-bottom: 2rem;
